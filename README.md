@@ -4,7 +4,11 @@ About the Dataset(s)
 
 The dataset I'll be working with is the archive of tweets from WeRateDogs, also known as Twitter user @dog rates (https://twitter.com/dog rates). 2356 basic tweets from November 2015 to August 2017 comprise this archive/dataset. WeRateDogs is a Twitter account that rates users' pets along with a lighthearted comment about the dog.
 
-Gathering Data
+## Description:
+
+I would be performing a Data wrangling Process on the archive tweets of weRateDogs. This include Gathering Data, Assessing Data (Visual Assessment and Programmatic Assessment), Cleaning the Data and Storing the new clean datset into a new csv file
+
+### Gathering Data
 
 
 WeRateDogs Twitter archive
@@ -20,7 +24,7 @@ Additional Data from Twitter API
 
 I got the complete set of JSON data for each tweet via the Twitter API using the tweet IDs from the Twitter archive, and I saved it all in a file called tweet json.txt. Only the tweet id, retweet count, and favorite count were included in the DataFrame tweet df I created from this JSON.
 
-Assessing Data
+### Assessing Data
 
 Assessing of data was done via:
 
@@ -45,11 +49,11 @@ Quality Issues
   Values for the rating numerator are significantly higher than 10. eg. 420, 666, 1776
   rating_denominator has values other than 10. e.g 420, 666, etc
 
-Cleaning Data
+### Cleaning Data
 
 I created a copy of three DataFrame before I started cleaning. For each quality/tidiness issue, I performed the programmatic data cleaning process in 3 stages - Define, Code & Test. 
 
-Storing Data
+### Storing Data
 
 After completion of the cleaning process, I merged the three datasets into one DataFrame and I stored the clean datasets in twitter_archive_master.CSV file
 
